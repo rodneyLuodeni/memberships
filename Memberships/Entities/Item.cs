@@ -46,13 +46,13 @@ namespace Memberships.Entities
         public int SectionId { get; set; }
         public int PartId { get; set; }
 
-        public int IsFree { get; set; }
+        public bool IsFree { get; set; }
 
         [DisplayName("Item Type")]
         public ICollection<ItemType> ItemTypes { get; set; }
 
         [DisplayName("Sections")]
-        public ICollection<ItemType> Sections { get; set; }
+        public ICollection<Section> Sections { get; set; }
 
         [DisplayName("Parts")]
         public ICollection<Part> Parts { get; set; }
